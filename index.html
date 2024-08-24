@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-03</title>
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/140046e8ba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- DaisyUI + Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#ABEF5F",
+              "secondary-color": "rgba(171, 239, 95, 0.5)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <!-- Header Section -->
+    <header class="bg-gray-100">
+      <nav class="mx-auto lg:container md:container px-3 lg:px-5">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="bg-primary-color px-2 py-1 rounded-3xl">
+              <i class="fa-solid fa-arrow-right text-base -rotate-45"></i>
+            </div>
+            <a class="flex text-3xl font-bold ml-2 cursor-pointer"> Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu text-base menu-horizontal px-1">
+              <li class="font-bold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="hidden lg:block md:block">
+              <div class="flex items-center gap-1">
+                <ion-icon
+                  name="search-outline"
+                  class="bg-white p-2 rounded-full text-lg cursor-pointer"
+                ></ion-icon>
+                <ion-icon
+                  name="cart-outline"
+                  class="bg-white p-2 rounded-full text-lg cursor-pointer"
+                ></ion-icon>
+                <a class="btn bg-primary-color font-bold hover:bg-lime-400"
+                  >Book Consult
+                  <div class="inline-block bg-black px-2 py-1 rounded-3xl">
+                    <i
+                      class="fa-solid fa-arrow-right text-base text-white -rotate-45"
+                    ></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 pr-4 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Banner Section -->
+      <section class="bg-gradient-to-b from-gray-100 to-white">
+        <div class="container mx-auto px-3 lg:px-5">
+          <div class="w-3/4 mx-auto">
+            <!-- Image section -->
+            <div class="flex justify-center">
+              <img src="./assets/banner.png" alt="" />
+            </div>
+            <!-- text section -->
+            <div>
+              <h1 class="text-5xl font-bold text-center py-8">
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="text-gray-600 text-center pb-8">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <div class="flex justify-center">
+                <button
+                  class="btn bg-secondary-color font-bold px-5 rounded-3xl hover:bg-lime-500"
+                >
+                  Veiw Details
+                  <div
+                    class="inline-block bg-primary-color px-2 py-1 rounded-3xl"
+                  >
+                    <i class="fa-solid fa-arrow-right text-base -rotate-45"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
+</html>
